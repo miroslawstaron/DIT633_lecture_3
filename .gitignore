@@ -3,3 +3,14 @@
 /myBinaryFile.bin
 /myTestFile.bin
 /myTestFile2.txt
+file_create.o
+file_sockets_client_struct.o
+file_sockets_client.o
+file_sockets_server_struct.o
+file_sockets_server.o
+google_test.o
+lecture3
+main.o
+read_binary_file.o
+simple_states_transition_table.o
+states_simple.o

@@ -33,5 +33,12 @@ int main(int argc, char* argv[])
 	// main_sock_struct();
 
 	// all good, return 0
+
+	// demonstration of simple state machine
+	// int result = main_states();
+
+	// demonstration of simple state machine with transition table
+	int result = main_transitions();
+
 	return 0;
 }

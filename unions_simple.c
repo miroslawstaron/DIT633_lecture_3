@@ -61,4 +61,6 @@ int unions_main(void) {
 
     // both members retain their values in the struct
     printf("Struct as integer (after setting float): %d\n", ns.i);
+
+    return 0;
 }

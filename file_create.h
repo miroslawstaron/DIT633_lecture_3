@@ -27,3 +27,5 @@
  */
 
 void demo_file_create();    // function prototype
+
+int dynamic_file_main(void);

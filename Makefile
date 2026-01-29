@@ -5,7 +5,7 @@ CC = gcc
 CFLAGS = -Wall -g
 
 # List of source files
-SRC = main.c unions_binary.c unions_simple.c simple_states_transition_table.c states_simple.c file_create.c read_binary_file.c 
+SRC = main.c unions_binary.c unions_simple.c simple_states_transition_table.c states_simple.c file_create.c read_binary_file.c read_binary_file_dynamic.c
 
 # List of object files
 OBJ = $(SRC:.c=.o)

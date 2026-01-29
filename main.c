@@ -42,11 +42,14 @@ int main(int argc, char* argv[])
 	// demonstration of writing binary files
 	// demo_write_binary();
 
+	// demonstration of reading and writing binary files with dynamic strings
+	dynamic_file_main();
+
 	// demonstration of unions
 	// unions_main();
 
 	// demonstration of unions with bit-fields
-	bitunions_main();
+	// bitunions_main();
 
 	// demonstration of simple state machine
 	// main_states();

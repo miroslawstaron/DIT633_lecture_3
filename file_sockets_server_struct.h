@@ -1,1 +1,0 @@
-void main_sock_struct();

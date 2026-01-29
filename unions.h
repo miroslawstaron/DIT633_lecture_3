@@ -1,5 +1,9 @@
+
+
+
+
 /*
- * structure_definition.h
+ * unions.h
  * 
  * Copyright (c) 2026 Miroslaw Staron
  * 
@@ -22,20 +26,11 @@
  * SOFTWARE.
  */
 
-#pragma once
+#ifndef UNIONS_H
+#define UNIONS_H
 
-/*
- * This file contains the definition of the structure
- * that we will use when sending information over the network
- */
+int unions_main();
 
-typedef struct {
-	int iAge; 
-	char name[20];
-	char address[20];
-} struct_person;
+int bitunions_main();
 
-typedef struct {
-	int iAge;
-	char name[20];
-} struct_person_small;
+#endif

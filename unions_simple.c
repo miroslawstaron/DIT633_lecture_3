@@ -44,12 +44,14 @@ int unions_main(void) {
     n.i = 42;           // set integer member
 
     printf("As integer: %d\n", n.i);
+    printf("As float: %f\n", n.f); // interpreting the same memory as float
 
     n.f = 3.14f;        // now the float member is the “active” one
     printf("As float: %f\n", n.f);
 
     // please observe what happens with the intger member now
     printf("As integer (after setting float): %d\n", n.i);
+    printf("Size of union: %zu bytes\n", sizeof(n));
 
     // Now let's see how the struct behaves
     struct NumberStruct ns; // variable of struct type
@@ -61,6 +63,7 @@ int unions_main(void) {
 
     // both members retain their values in the struct
     printf("Struct as integer (after setting float): %d\n", ns.i);
+    printf("Size of struct: %zu bytes\n", sizeof(ns));
 
     return 0;
 }

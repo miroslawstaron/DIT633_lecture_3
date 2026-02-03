@@ -105,12 +105,17 @@ int read_person(FILE *f, Person *out)
 }
 
 // Free dynamically allocated memory from a Person structure
-void free_person(Person *p)
+int free_person(Person *p)
 {
     if (p && p->name) {
         free(p->name);
         p->name = NULL;  // Clear pointer to avoid use-after-free bugs
+
+        free(p);  // Free the Person structure itself   
+        p = NULL;
+        return 0;
     }
+    return 1;
 }
 
 /*

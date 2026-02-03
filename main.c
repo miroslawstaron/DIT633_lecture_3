@@ -34,7 +34,7 @@
 int main(int argc, char* argv[])
 {
 	// demonstration of creating, reading and writing to a file
-	demo_file_create();
+	// demo_file_create();
 
 	// demonstration of reading binary files
 	// demo_file_binary();
@@ -43,7 +43,7 @@ int main(int argc, char* argv[])
 	// demo_write_binary();
 
 	// demonstration of reading and writing binary files with dynamic strings
-	dynamic_file_main();
+	// dynamic_file_main();
 
 	// demonstration of unions
 	// unions_main();
@@ -55,7 +55,7 @@ int main(int argc, char* argv[])
 	// main_states();
 
 	// demonstration of simple state machine with transition table
-	// main_transitions();
+	main_transitions();
 
 	return 0;
 }

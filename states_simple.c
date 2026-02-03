@@ -124,18 +124,20 @@ bool stop_moving(void) {
 
 bool shutdown(void) {
     // check if the user presses a button to exit (x)
+    
     /*
     if (user_pressed_exit()) {
         printf("User requested exit.\n");
         return true;
     }
     */
-
+    
     // non-blocking version
     if (user_pressed_exit_nonblocking()) {
         printf("User requested exit.\n");
         return true;
     }
+        
     return false;  }
 
 /* State machine implementation 

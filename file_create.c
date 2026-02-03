@@ -39,6 +39,8 @@ void demo_file_create()
 	// open the file to read
 	pFileToCreate = fopen(strFilename, "w");
 
+	printf("Creating file: %s\n", strFilename);
+
 	// a good practice when working with files is to check
 	// that the file pointer is correct, i.e. the file was opened
 	// in the way we wanted
@@ -49,6 +51,8 @@ void demo_file_create()
 		// here I chose to read a string from the file
 
 		char strToRead[MAX] = "Hello World! #2024\n";
+
+		printf("Writing to file: %s\n", strToRead);
 		
 		// read one word, %s means that it will read the text
 		// until it finds a whitespace of EOF
@@ -72,4 +76,6 @@ void demo_file_create()
 	// and please remember to close the file
 	// if we do not close the file, the data may be lost
 	fclose(pFileToCreate);
+
+	printf("File %s created and closed.\n", strFilename);
 }
